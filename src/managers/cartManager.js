@@ -25,7 +25,7 @@ class cartManager {
     }
     carts.carts.push(newCart)
     await fs.promises.writeFile(this.path, JSON.stringify(carts))
-    return 'New cart created!'
+    return newCart
   }
 
   getAll = async () => {
