@@ -28,7 +28,7 @@ export const addProduct = async (req, res) => {
     req.body.title,
     req.body.description,
     parseInt(req.body.price),
-    `http://127.0.0.1:5000/static/images/multimedia/nuevosproductos/${req.file.filename}`,
+    `https://karamhechoamano-backend.onrender.com/static/images/multimedia/nuevosproductos/${req.file.filename}`,
     req.body.category,
     parseInt(req.body.stock),
     req.body.disponible === "true" ? true : false
@@ -63,7 +63,7 @@ export const temporaryImage = async (req, res) => {
   }
 
   res.json(
-    `http://127.0.0.1:5000/static/images/imagenesprovisorias/${req.body.name}`
+    `https://karamhechoamano-backend.onrender.com/static/images/imagenesprovisorias/${req.body.name}`
   );
 };
 
